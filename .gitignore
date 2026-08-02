@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon
+*.swp
+*~
+
+# Thumbnails
+._*
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
