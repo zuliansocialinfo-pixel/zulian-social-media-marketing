@@ -635,4 +635,32 @@ document.addEventListener("DOMContentLoaded", () => {
 // ═══════════════════════════════════════
 window.addEventListener("load", () => {
   initLoader();
+  initCirclesAnimation();
 });
+
+// ═══════════════════════════════════════
+// ── CIRCLES ANIMATION ──
+// ═══════════════════════════════════════
+function initCirclesAnimation() {
+  const circlesSection = document.querySelector('.home-circles-scroll-section');
+  if (!circlesSection) return;
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.home-circles-scroll-section',
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 1,
+      pin: '.home-circles-container',
+    }
+  });
+
+  // Fade in titles and circles
+  tl.to('.home-circles-title', { opacity: 1, duration: 1, stagger: 0.2 })
+    .to('.circles-svg circle', { strokeWidth: 4, duration: 1 }, "<")
+    .to('.svg-wrapper', { scale: 20, duration: 4, ease: "power2.inOut" }, "+=0.5")
+    .to('.home-circles-title', { opacity: 0, duration: 1 }, "-=3.5")
+    .to('.svg-background-mask', { opacity: 1, duration: 1 }, "-=3")
+    .to('.home-circles-objective-text:nth-child(1)', { opacity: 0, scale: 1.5, duration: 1 }, "-=2")
+    .to('.home-circles-objective-text:nth-child(2)', { opacity: 1, scale: 1, duration: 1 }, "-=1.5");
+}

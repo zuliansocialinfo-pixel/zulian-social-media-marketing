@@ -59,7 +59,8 @@
   <!-- ═══ NAVIGATION ═══ -->
   <nav class="navigation" id="navigation">
     <div class="navigation-header">
-      <a href="#" class="navigation-logo-wrapper" id="nav-logo">
+      <a href="#" class="navigation-logo-wrapper" id="nav-logo" style="display: flex; align-items: center; text-decoration: none;">
+        <img src="images/logo.jpg" alt="Zulian Logo" style="height: 40px; margin-right: 15px; border-radius: 4px;" />
         <span class="navigation-logo-text">Zulian <span class="accent">&amp;</span> Social</span>
       </a>
       <div class="navigation-toggle-wrapper" id="nav-toggle">
@@ -227,6 +228,10 @@
           <p class="body-1" data-anim="fade" data-fade-delay="0.2">
             Strategie personalizzate, contenuti d'impatto e campagne che convertono. Ogni progetto è unico, come il tuo brand.
           </p>
+          <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;" data-anim="fade" data-fade-delay="0.4">
+            <a href="listino-prezzi.pdf" target="_blank" class="primary-button" style="text-decoration: none; padding: 1rem 2rem; border-radius: 40px; background: var(--text-primary); color: var(--bg-primary); display: inline-flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; font-size: 0.9rem;">Scarica Listino (PDF)</a>
+            <a href="contratto.pdf" target="_blank" class="primary-button" style="text-decoration: none; padding: 1rem 2rem; border-radius: 40px; background: transparent; border: 1px solid var(--text-primary); color: var(--text-primary); display: inline-flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; font-size: 0.9rem;">Scarica Contratto (PDF)</a>
+          </div>
         </div>
 
         <div class="services-grid">
@@ -332,12 +337,61 @@
       </div>
     </section>
 
+    <!-- ── CIRCLES ANIMATION (TRANSITION) ── -->
+    <section class="home-circles-scroll-section" id="intro-circles">
+      <div class="home-circles-container">
+        <div class="svg-container">
+          <div class="home-circles-titles">
+            <div class="home-circles-title"><div class="heading-2 italic">SOCIAL</div></div>
+            <div class="home-circles-title"><div class="heading-2 italic">WEB</div></div>
+            <div class="home-circles-title"><div class="heading-2 italic">ADS</div></div>
+          </div>
+          <div class="svg-wrapper">
+            <svg class="circles-svg" viewBox="0 0 600 600">
+              <defs>
+                <mask id="mask1">
+                  <rect width="100%" height="100%" fill="black" />
+                  <circle cx="222.5" cy="344.7" r="99.5" fill="white" />
+                </mask>
+                <mask id="mask2">
+                  <rect width="100%" height="100%" fill="black" />
+                  <circle cx="300" cy="210.5" r="99.5" fill="white" />
+                </mask>
+                <mask id="mask3">
+                  <rect width="100%" height="100%" fill="black" />
+                  <circle cx="377.5" cy="344.7" r="99.5" fill="white" />
+                </mask>
+                <mask id="intersection">
+                  <rect width="100%" height="100%" fill="black" />
+                  <g mask="url(#mask1)">
+                    <g mask="url(#mask2)">
+                      <g mask="url(#mask3)">
+                        <rect width="100%" height="100%" fill="white" />
+                      </g>
+                    </g>
+                  </g>
+                </mask>
+              </defs>
+              <circle cx="220" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
+              <circle cx="300" cy="230.72" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
+              <circle cx="380" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
+              <rect width="100%" height="100%" fill="#111111" mask="url(#intersection)" opacity="0" class="svg-background-mask" />
+            </svg>
+          </div>
+        </div>
+        <div class="home-circles-objective-texts">
+          <div class="home-circles-objective-text"><h2 class="heading-2">L'obiettivo è <span class="italic">chiaro</span></h2></div>
+          <div class="home-circles-objective-text" style="opacity: 0;"><h2 class="heading-2">PROPRIO <span class="italic">QUI</span></h2></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ── ABOUT ── -->
     <section class="about-section" id="about">
       <div class="container">
         <div class="about-layout">
           <div class="about-image-wrapper" data-anim="fade">
-            <img src="images/team-creative.jpg" alt="Il team Zulian Social Media Marketing" loading="lazy" />
+            <img src="images/face.jpg" alt="Marco Zulian" loading="lazy" style="border-radius: 12px; object-fit: cover;" />
           </div>
           <div class="about-text">
             <div class="section-label" data-anim="fade">
@@ -445,6 +499,9 @@
         <div class="footer-brand">
           <div class="footer-brand-name">Zulian <span class="accent">&amp;</span> Social</div>
           <p>Agenzia di social media marketing per brand ambiziosi che vogliono crescere in modo autentico e misurabile.</p>
+          <div style="margin-top: 2rem;">
+            <img src="images/avatar-detective.png" alt="Mascotte Zulian" style="width: 100px; height: auto;" />
+          </div>
         </div>
         <div class="footer-links">
           <div class="footer-links-column">

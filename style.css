@@ -1280,3 +1280,70 @@ html.lenis, html.lenis body {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ── CIRCLES ANIMATION (TRANSITION) ── */
+.home-circles-scroll-section {
+  height: 400vh;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+.home-circles-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.svg-wrapper {
+  width: 60vw;
+  max-width: 800px;
+  position: relative;
+}
+.circles-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.home-circles-titles {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+.home-circles-title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+/* Title positions relative to the SVG center */
+.home-circles-title:nth-child(1) { top: 60%; left: 35%; }
+.home-circles-title:nth-child(2) { top: 35%; left: 50%; }
+.home-circles-title:nth-child(3) { top: 60%; left: 65%; }
+
+.home-circles-objective-texts {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* behind the SVG mask */
+  text-align: center;
+}
+.home-circles-objective-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+.svg-background-mask {
+  fill: var(--bg-primary);
+}
