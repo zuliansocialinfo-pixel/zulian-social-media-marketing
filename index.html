@@ -3,35 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zulian Social Media Marketing — Agenzia di Social Media Marketing per Brand Ambiziosi</title>
-  <meta name="description" content="Trasformiamo la tua presenza digitale con strategie su misura di social media marketing, content creation, branding e advertising per brand che vogliono crescere." />
-  <meta property="og:title" content="Zulian Social Media Marketing — Agenzia per Brand Ambiziosi" />
-  <meta property="og:description" content="Strategie su misura di social media marketing, content creation, branding e advertising per brand che vogliono crescere." />
+  <title>Zulian Social Media Marketing — Siti Web, E-commerce, App e Automazioni</title>
+  <meta name="description" content="Sviluppo siti web, e-commerce, app e automazioni per attività e brand. Social, video e advertising diventano leve di crescita collegate a un sistema digitale chiaro e misurabile." />
+  <meta property="og:title" content="Zulian — Sviluppo Web, E-commerce, App e Automazioni" />
+  <meta property="og:description" content="Progetto sistemi digitali che trasformano attenzione in contatti, prenotazioni e vendite: web, e-commerce, app, automazioni e marketing collegati tra loro." />
   <meta property="og:image" content="images/hero-marketing.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Zulian Social Media Marketing" />
-  <meta name="twitter:description" content="Agenzia di Social Media Marketing per brand ambiziosi." />
+  <meta name="twitter:title" content="Zulian — Sviluppo Web e Sistemi Digitali" />
+  <meta name="twitter:description" content="Siti web, e-commerce, app, automazioni e marketing digitale costruiti intorno a un obiettivo commerciale reale." />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- Lenis Smooth Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css" />
-
-  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- GSAP -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
-
-  <!-- SplitType -->
   <script src="https://unpkg.com/split-type"></script>
-
-  <!-- Lenis -->
   <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
 
   <style>
@@ -41,7 +31,6 @@
 </head>
 <body>
 
-  <!-- ═══ LOADER ═══ -->
   <div class="loader" id="loader">
     <div class="loader-counter" id="loader-counter">
       <div class="counter-1 digit"><div class="num">0</div><div class="num">1</div></div>
@@ -51,24 +40,22 @@
     </div>
   </div>
 
-  <!-- ═══ BLURRED BACKGROUND SHAPE ═══ -->
   <div class="blurred-shapes">
     <div class="blurred-shape" id="blurred-shape"></div>
   </div>
 
-  <!-- ═══ NAVIGATION ═══ -->
   <nav class="navigation" id="navigation">
     <div class="navigation-header">
-      <a href="#" class="navigation-logo-wrapper" id="nav-logo" style="display: flex; align-items: center; text-decoration: none;">
+      <a href="#hero" class="navigation-logo-wrapper" id="nav-logo" style="display: flex; align-items: center; text-decoration: none;">
         <img src="images/logo.jpg" alt="Zulian Logo" style="height: 40px; margin-right: 15px; border-radius: 4px;" />
         <span class="navigation-logo-text">Zulian <span class="accent">&amp;</span> Social</span>
       </a>
-      <div class="navigation-toggle-wrapper" id="nav-toggle">
+      <div class="navigation-toggle-wrapper" id="nav-toggle" role="button" tabindex="0" aria-label="Apri o chiudi il menu">
         <div class="navigation-toggle-text">
           <div class="navigation-open-btn-text">MENU</div>
           <div class="navigation-close-btn-text">CHIUDI</div>
         </div>
-        <div class="navigation-toggle-icon">
+        <div class="navigation-toggle-icon" aria-hidden="true">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -79,473 +66,121 @@
     <div class="navigation-content" id="nav-content">
       <div class="navigation-content-wrapper">
         <a href="#hero" class="navigation-link" data-nav-link>
-          <div class="navigation-link-wrapper">
-            <div class="navigation-link-dot"></div>
-            <div class="navigation-link-title">Introduzione <span class="italic">Zulian</span></div>
-          </div>
-          <div class="navigation-link-line"></div>
-        </a>
-        <a href="#about" class="navigation-link" data-nav-link>
-          <div class="navigation-link-wrapper">
-            <div class="navigation-link-dot"></div>
-            <div class="navigation-link-title">Chi <span class="italic">siamo</span> davvero</div>
-          </div>
-          <div class="navigation-link-line"></div>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title">Il <span class="italic">posizionamento</span></div></div><div class="navigation-link-line"></div>
         </a>
         <a href="#services" class="navigation-link" data-nav-link>
-          <div class="navigation-link-wrapper">
-            <div class="navigation-link-dot"></div>
-            <div class="navigation-link-title">I nostri <span class="italic">servizi</span></div>
-          </div>
-          <div class="navigation-link-line"></div>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title">Le <span class="italic">soluzioni</span></div></div><div class="navigation-link-line"></div>
         </a>
         <a href="#portfolio" class="navigation-link" data-nav-link>
-          <div class="navigation-link-wrapper">
-            <div class="navigation-link-dot"></div>
-            <div class="navigation-link-title">I nostri <span class="italic">lavori</span></div>
-          </div>
-          <div class="navigation-link-line"></div>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title">Cosa posso <span class="italic">costruire</span></div></div><div class="navigation-link-line"></div>
+        </a>
+        <a href="#process" class="navigation-link" data-nav-link>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title">Come <span class="italic">lavoro</span></div></div><div class="navigation-link-line"></div>
+        </a>
+        <a href="#about" class="navigation-link" data-nav-link>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title">Chi <span class="italic">sono</span></div></div><div class="navigation-link-line"></div>
         </a>
         <a href="#contact" class="navigation-link" data-nav-link>
-          <div class="navigation-link-wrapper">
-            <div class="navigation-link-dot"></div>
-            <div class="navigation-link-title"><span class="italic">Contattaci</span></div>
-          </div>
+          <div class="navigation-link-wrapper"><div class="navigation-link-dot"></div><div class="navigation-link-title"><span class="italic">Parliamone</span></div></div>
         </a>
-
-        <div class="navigation-extra">
-          <a href="#">Privacy Policy</a>
-          <div class="navigation-social-icons">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </nav>
 
-  <!-- ═══ MOBILE LANDSCAPE WARNING ═══ -->
-  <div class="mobile-landscape-warning">
-    <div class="body-3 text-accent" style="text-align:center;">Per una migliore esperienza, visualizza il sito in verticale o dal tuo computer</div>
-  </div>
+  <div class="mobile-landscape-warning"><div class="body-3 text-accent" style="text-align:center;">Per una migliore esperienza, visualizza il sito in verticale o dal tuo computer</div></div>
 
-  <!-- ═══ MAIN CONTENT ═══ -->
   <main>
-
-    <!-- ── HERO ── -->
     <section class="hero" id="hero">
-      <div class="hero-background">
-        <img src="images/hero-marketing.jpg" alt="Zulian Social Media Marketing workspace" loading="eager" />
-      </div>
+      <div class="hero-background"><img src="images/hero-marketing.jpg" alt="Ambiente di lavoro digitale Zulian" loading="eager" /></div>
       <div class="container hero-content">
         <div class="hero-logo-wrapper" data-anim="fade">
-          <h1 class="hero-brand-name">
-            Zulian<br/><span class="accent">Social</span>
-          </h1>
-          <p class="hero-subtitle">Social Media Marketing</p>
-        </div>
-
-        <div class="hero-slider">
-          <div class="hero-slider-track" id="hero-slider-track">
-            <img src="images/team-creative.jpg" alt="Team creativo" loading="eager" />
-            <img src="images/content-creation.jpg" alt="Content creation" loading="eager" />
-            <img src="images/analytics-dashboard.jpg" alt="Analytics" loading="eager" />
-            <img src="images/strategy-session.jpg" alt="Strategy session" loading="eager" />
-            <img src="images/social-ads.jpg" alt="Social ads" loading="eager" />
-            <img src="images/branding-design.jpg" alt="Branding design" loading="eager" />
-            <img src="images/video-production.jpg" alt="Video production" loading="eager" />
-            <img src="images/hero-marketing.jpg" alt="Marketing agency" loading="eager" />
-            <!-- Duplicate for seamless loop -->
-            <img src="images/team-creative.jpg" alt="Team creativo" loading="lazy" />
-            <img src="images/content-creation.jpg" alt="Content creation" loading="lazy" />
-            <img src="images/analytics-dashboard.jpg" alt="Analytics" loading="lazy" />
-            <img src="images/strategy-session.jpg" alt="Strategy session" loading="lazy" />
-            <img src="images/social-ads.jpg" alt="Social ads" loading="lazy" />
-            <img src="images/branding-design.jpg" alt="Branding design" loading="lazy" />
-            <img src="images/video-production.jpg" alt="Video production" loading="lazy" />
-            <img src="images/hero-marketing.jpg" alt="Marketing agency" loading="lazy" />
+          <h1 class="hero-brand-name">Il tuo partner per la<br/><span class="accent">crescita digitale</span></h1>
+          <p class="hero-subtitle">Sviluppo Web · E-commerce · App · Automazioni · Marketing</p>
+          <div data-anim="fade" data-fade-delay="0.15" style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-top:1.6rem;">
+            <a href="#contact" class="cta-button">Parliamo del progetto<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="#services" style="display:inline-flex; align-items:center; padding:1rem 2rem; border:1px solid var(--color-border-active); border-radius:40px; color:var(--color-text-high); text-transform:uppercase; letter-spacing:.05em; font-weight:600; font-size:.9rem;">Scopri le soluzioni</a>
           </div>
         </div>
+
+        <div class="hero-slider"><div class="hero-slider-track" id="hero-slider-track">
+          <img src="images/team-creative.jpg" alt="Ambiente creativo e progettazione" loading="eager" />
+          <img src="images/content-creation.jpg" alt="Produzione di contenuti digitali" loading="eager" />
+          <img src="images/analytics-dashboard.jpg" alt="Analisi e misurazione dei dati" loading="eager" />
+          <img src="images/strategy-session.jpg" alt="Strategia digitale" loading="eager" />
+          <img src="images/social-ads.jpg" alt="Advertising digitale" loading="eager" />
+          <img src="images/branding-design.jpg" alt="Design e identità visiva" loading="eager" />
+          <img src="images/video-production.jpg" alt="Produzione video" loading="eager" />
+          <img src="images/hero-marketing.jpg" alt="Sviluppo e marketing digitale" loading="eager" />
+          <img src="images/team-creative.jpg" alt="" loading="lazy" /><img src="images/content-creation.jpg" alt="" loading="lazy" /><img src="images/analytics-dashboard.jpg" alt="" loading="lazy" /><img src="images/strategy-session.jpg" alt="" loading="lazy" /><img src="images/social-ads.jpg" alt="" loading="lazy" /><img src="images/branding-design.jpg" alt="" loading="lazy" /><img src="images/video-production.jpg" alt="" loading="lazy" /><img src="images/hero-marketing.jpg" alt="" loading="lazy" />
+        </div></div>
 
         <div class="hero-info">
-          <div class="hero-info-left">
-            <p class="body-3 text-high">Agenzia di social media<br/>per <span class="italic">brand ambiziosi</span></p>
-          </div>
+          <div class="hero-info-left"><p class="body-3 text-high">Siti e sistemi digitali<br/>costruiti intorno a un <span class="italic">obiettivo commerciale</span></p></div>
           <div class="hero-info-right">
-            <div class="hero-info-column">
-              <p class="body-3 text-high">Social Strategy</p>
-              <p class="body-3 text-high">Content Creation</p>
-              <p class="body-3 text-high">Brand Identity</p>
-            </div>
-            <div class="hero-info-column">
-              <p class="body-3 text-high">Advertising</p>
-              <p class="body-3 text-high">Analytics & Growth</p>
-            </div>
+            <div class="hero-info-column"><p class="body-3 text-high">Siti Web</p><p class="body-3 text-high">E-commerce</p><p class="body-3 text-high">App &amp; Piattaforme</p></div>
+            <div class="hero-info-column"><p class="body-3 text-high">Automazioni &amp; AI</p><p class="body-3 text-high">Social &amp; Video</p><p class="body-3 text-high">Advertising</p></div>
           </div>
-        </div>
-        <div class="hero-line"></div>
+        </div><div class="hero-line"></div>
       </div>
     </section>
 
-    <!-- ── FILLING TEXT ── -->
-    <section class="filling-text-section">
-      <div class="container">
-        <p class="filling-text" id="filling-text">
-          Non siamo solo un'agenzia. Siamo il partner strategico che trasforma la tua visione in contenuti che conquistano, community che crescono e brand che lasciano il segno nel panorama digitale.
-        </p>
-      </div>
-    </section>
+    <section class="filling-text-section"><div class="container"><p class="filling-text" id="filling-text">Un sito non deve essere un catalogo di effetti. Deve far capire cosa vendi, perché fidarsi e cosa fare dopo. Il movimento serve a guidare l'attenzione, non a complicare il percorso.</p></div></section>
 
-    <!-- ── PARALLAX IMAGE ── -->
-    <section class="parallax-section" id="parallax-1">
-      <div class="parallax-image">
-        <img src="images/analytics-dashboard.jpg" alt="Analytics e crescita" loading="lazy" />
-      </div>
-      <div class="parallax-overlay"></div>
-      <div class="parallax-content container">
-        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">
-          Dove i <span class="italic">dati</span><br/>incontrano la <span class="italic text-accent">creatività</span>
-        </h2>
-      </div>
-    </section>
+    <section class="parallax-section" id="parallax-1"><div class="parallax-image"><img src="images/analytics-dashboard.jpg" alt="Analisi e sviluppo di un sistema digitale" loading="lazy" /></div><div class="parallax-overlay"></div><div class="parallax-content container"><h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">Design, tecnologia e <span class="italic text-accent">conversione</span><br/>devono lavorare insieme.</h2></div></section>
 
-    <!-- ── SERVICES ── -->
     <section class="services-section" id="services">
       <div class="container">
-        <div class="section-label" data-anim="fade">
-          <div class="section-label-line"></div>
-          <span class="section-label-text">I Nostri Servizi</span>
-        </div>
-
+        <div class="section-label" data-anim="fade"><div class="section-label-line"></div><span class="section-label-text">Le Soluzioni</span></div>
         <div class="services-header">
-          <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">
-            Tutto ciò che serve<br/>per <span class="italic">dominare</span> i social
-          </h2>
-          <p class="body-1" data-anim="fade" data-fade-delay="0.2">
-            Strategie personalizzate, contenuti d'impatto e campagne che convertono. Ogni progetto è unico, come il tuo brand.
-          </p>
-          <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;" data-anim="fade" data-fade-delay="0.4">
-            <a href="listino-prezzi.pdf" target="_blank" class="primary-button" style="text-decoration: none; padding: 1rem 2rem; border-radius: 40px; background: var(--text-primary); color: var(--bg-primary); display: inline-flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; font-size: 0.9rem;">Scarica Listino (PDF)</a>
-            <a href="contratto.pdf" target="_blank" class="primary-button" style="text-decoration: none; padding: 1rem 2rem; border-radius: 40px; background: transparent; border: 1px solid var(--text-primary); color: var(--text-primary); display: inline-flex; align-items: center; justify-content: center; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; font-size: 0.9rem;">Scarica Contratto (PDF)</a>
-          </div>
+          <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">Tre livelli per partire.<br/>Poi si cresce <span class="italic">solo quando serve</span>.</h2>
+          <p class="body-1" data-anim="fade" data-fade-delay="0.2">Niente e-commerce enorme se basta un sito che porta contatti. Si parte dalla soluzione minima che risolve il problema commerciale e si aggiungono funzioni solo quando hanno un ruolo preciso.</p>
         </div>
-
         <div class="services-grid">
-          <div class="service-card" data-anim="fade" data-fade-delay="0">
-            <span class="service-card-number">01</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>Social Media Strategy</h3>
-            <p>Analisi del mercato, studio del target, definizione degli obiettivi e creazione di un piano editoriale su misura per il tuo brand.</p>
-          </div>
-
-          <div class="service-card" data-anim="fade" data-fade-delay="0.1">
-            <span class="service-card-number">02</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            </div>
-            <h3>Content Creation</h3>
-            <p>Foto, video, reel, caroselli e stories professionali. Contenuti visivi che catturano l'attenzione e raccontano la tua storia.</p>
-          </div>
-
-          <div class="service-card" data-anim="fade" data-fade-delay="0.2">
-            <span class="service-card-number">03</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <h3>Community Management</h3>
-            <p>Gestione quotidiana dei tuoi profili social, interazione con la community e costruzione di relazioni autentiche con il tuo pubblico.</p>
-          </div>
-
-          <div class="service-card" data-anim="fade" data-fade-delay="0.3">
-            <span class="service-card-number">04</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-            </div>
-            <h3>Social Advertising</h3>
-            <p>Campagne pubblicitarie su Meta, TikTok, LinkedIn e Google. Targeting preciso, A/B testing e ottimizzazione continua del ROI.</p>
-          </div>
-
-          <div class="service-card" data-anim="fade" data-fade-delay="0.4">
-            <span class="service-card-number">05</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <h3>Analytics & Reporting</h3>
-            <p>Dashboard personalizzate, report mensili dettagliati e analisi dei KPI per misurare ogni risultato e ottimizzare le performance.</p>
-          </div>
-
-          <div class="service-card" data-anim="fade" data-fade-delay="0.5">
-            <span class="service-card-number">06</span>
-            <div class="service-card-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>Brand Identity & Design</h3>
-            <p>Logo, palette colori, tone of voice e linee guida per un'identità visiva coerente e riconoscibile su tutte le piattaforme.</p>
-          </div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0"><span class="service-card-number">01</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M3 4h18v16H3z"/><path d="M3 9h18"/><path d="M7 6.5h.01"/><path d="M10 6.5h.01"/></svg></div><h3>Sito Essenziale</h3><p>Per attività locali e professionisti che devono essere trovati, capiti e contattati. Offerta chiara, mobile curato, CTA visibili, contatti e una struttura facile da aggiornare.</p></div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0.1"><span class="service-card-number">02</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg></div><h3>Sito Crescita</h3><p>Per chi deve generare richieste, prenotazioni o lead con più contenuti e più percorsi. Pagine dedicate, proof, analytics, SEO locale, moduli e automazioni leggere.</p></div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0.2"><span class="service-card-number">03</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div><h3>Sistema Digitale</h3><p>Quando il sito diventa uno strumento operativo: aree riservate, web app, community, gestionali, dashboard e integrazioni con dati o servizi esterni.</p></div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0.3"><span class="service-card-number">04</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1"/><circle cx="19" cy="20" r="1"/><path d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6"/></svg></div><h3>E-commerce</h3><p>Shopify o una soluzione equivalente solo quando devi vendere davvero online. Catalogo, prodotto, checkout, pagamenti, spedizioni e automazioni restano centrali e semplici da usare.</p></div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0.4"><span class="service-card-number">05</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M12 3v4"/><path d="M12 17v4"/><path d="M3 12h4"/><path d="M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></div><h3>Automazioni &amp; AI</h3><p>Follow-up, gestione lead, flussi operativi, assistenti e collegamenti tra strumenti. L'automazione entra solo dove riduce lavoro manuale o migliora il servizio.</p></div>
+          <div class="service-card" data-anim="fade" data-fade-delay="0.5"><span class="service-card-number">06</span><div class="service-card-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 8h8"/><path d="M8 12h5"/></svg></div><h3>Social, Video &amp; Ads</h3><p>Contenuti e campagne restano leve importanti, ma supportano il sistema: portano persone dentro un percorso che deve trasformare attenzione in una richiesta, una prenotazione o una vendita.</p></div>
         </div>
+        <div data-anim="fade" data-fade-delay="0.2" style="margin-top:3rem; display:flex; justify-content:flex-start;"><a href="#contact" class="cta-button">Capire da quale livello partire<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
       </div>
     </section>
 
-
-    <!-- ── PORTFOLIO ── -->
     <section class="portfolio-section" id="portfolio">
       <div class="container">
-        <div class="section-label" data-anim="fade">
-          <div class="section-label-line"></div>
-          <span class="section-label-text">I Nostri Lavori</span>
-        </div>
-        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%" style="margin-bottom: 3rem;">
-          Progetti che<br/><span class="italic">parlano da soli</span>
-        </h2>
-
+        <div class="section-label" data-anim="fade"><div class="section-label-line"></div><span class="section-label-text">Cosa Posso Costruire</span></div>
+        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%" style="margin-bottom: 1.2rem;">Non casi inventati.<br/><span class="italic">Problemi reali da risolvere.</span></h2>
+        <p class="body-1" data-anim="fade" data-fade-delay="0.1" style="max-width:760px; margin-bottom:3rem;">Finché portfolio e risultati non sono documentati, questa sezione mostra il tipo di lavoro che posso progettare senza spacciare esempi o numeri per prove reali.</p>
         <div class="portfolio-grid">
-          <div class="portfolio-item" data-anim="fade">
-            <img src="images/content-creation.jpg" alt="Content creation per brand beauty" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <span class="portfolio-item-category">Content Creation</span>
-              <h3 class="portfolio-item-title">Campagna Beauty — Contenuti Premium</h3>
-            </div>
-          </div>
-          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.15">
-            <img src="images/strategy-session.jpg" alt="Strategia social per brand fashion" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <span class="portfolio-item-category">Strategy & Branding</span>
-              <h3 class="portfolio-item-title">Rebranding Completo — Settore Fashion</h3>
-            </div>
-          </div>
-          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.1">
-            <img src="images/social-ads.jpg" alt="Campagna advertising social" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <span class="portfolio-item-category">Social Advertising</span>
-              <h3 class="portfolio-item-title">Meta Ads — +280% ROAS in 3 Mesi</h3>
-            </div>
-          </div>
-          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.2">
-            <img src="images/video-production.jpg" alt="Video production professionale" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <span class="portfolio-item-category">Video Production</span>
-              <h3 class="portfolio-item-title">Serie di Reel Virali — 2M+ Views</h3>
-            </div>
-          </div>
+          <div class="portfolio-item" data-anim="fade"><img src="images/strategy-session.jpg" alt="" loading="lazy" /><div class="portfolio-item-overlay"><span class="portfolio-item-category">Attività locali</span><h3 class="portfolio-item-title">Un sito che porta chiamate, richieste e appuntamenti</h3></div></div>
+          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.15"><img src="images/branding-design.jpg" alt="" loading="lazy" /><div class="portfolio-item-overlay"><span class="portfolio-item-category">Brand &amp; E-commerce</span><h3 class="portfolio-item-title">Catalogo, prodotto e acquisto senza attrito</h3></div></div>
+          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.1"><img src="images/social-ads.jpg" alt="" loading="lazy" /><div class="portfolio-item-overlay"><span class="portfolio-item-category">Landing &amp; Funnel</span><h3 class="portfolio-item-title">Una proposta, una campagna, una conversione chiara</h3></div></div>
+          <div class="portfolio-item" data-anim="fade" data-fade-delay="0.2"><img src="images/analytics-dashboard.jpg" alt="" loading="lazy" /><div class="portfolio-item-overlay"><span class="portfolio-item-category">Automazioni &amp; App</span><h3 class="portfolio-item-title">Dal contatto al follow-up con meno lavoro manuale</h3></div></div>
         </div>
       </div>
     </section>
 
-    <!-- ── CIRCLES ANIMATION (TRANSITION) ── -->
     <section class="home-circles-scroll-section" id="intro-circles">
       <div class="home-circles-container">
-        <div class="svg-container">
-          <div class="home-circles-titles">
-            <div class="home-circles-title"><div class="heading-2 italic">SOCIAL</div></div>
-            <div class="home-circles-title"><div class="heading-2 italic">WEB</div></div>
-            <div class="home-circles-title"><div class="heading-2 italic">ADS</div></div>
-          </div>
-          <div class="svg-wrapper">
-            <svg class="circles-svg" viewBox="0 0 600 600">
-              <defs>
-                <mask id="mask1">
-                  <rect width="100%" height="100%" fill="black" />
-                  <circle cx="222.5" cy="344.7" r="99.5" fill="white" />
-                </mask>
-                <mask id="mask2">
-                  <rect width="100%" height="100%" fill="black" />
-                  <circle cx="300" cy="210.5" r="99.5" fill="white" />
-                </mask>
-                <mask id="mask3">
-                  <rect width="100%" height="100%" fill="black" />
-                  <circle cx="377.5" cy="344.7" r="99.5" fill="white" />
-                </mask>
-                <mask id="intersection">
-                  <rect width="100%" height="100%" fill="black" />
-                  <g mask="url(#mask1)">
-                    <g mask="url(#mask2)">
-                      <g mask="url(#mask3)">
-                        <rect width="100%" height="100%" fill="white" />
-                      </g>
-                    </g>
-                  </g>
-                </mask>
-              </defs>
-              <circle cx="220" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
-              <circle cx="300" cy="230.72" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
-              <circle cx="380" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" />
-              <rect width="100%" height="100%" fill="#111111" mask="url(#intersection)" opacity="0" class="svg-background-mask" />
-            </svg>
-          </div>
+        <div class="svg-container"><div class="home-circles-titles"><div class="home-circles-title"><div class="heading-2 italic">WEB</div></div><div class="home-circles-title"><div class="heading-2 italic">AI</div></div><div class="home-circles-title"><div class="heading-2 italic">GROWTH</div></div></div>
+          <div class="svg-wrapper"><svg class="circles-svg" viewBox="0 0 600 600" aria-hidden="true"><defs><mask id="mask1"><rect width="100%" height="100%" fill="black" /><circle cx="222.5" cy="344.7" r="99.5" fill="white" /></mask><mask id="mask2"><rect width="100%" height="100%" fill="black" /><circle cx="300" cy="210.5" r="99.5" fill="white" /></mask><mask id="mask3"><rect width="100%" height="100%" fill="black" /><circle cx="377.5" cy="344.7" r="99.5" fill="white" /></mask><mask id="intersection"><rect width="100%" height="100%" fill="black" /><g mask="url(#mask1)"><g mask="url(#mask2)"><g mask="url(#mask3)"><rect width="100%" height="100%" fill="white" /></g></g></g></mask></defs><circle cx="220" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" /><circle cx="300" cy="230.72" r="100" fill="none" stroke="#FCA17F" stroke-width="1" /><circle cx="380" cy="369.28" r="100" fill="none" stroke="#FCA17F" stroke-width="1" /><rect width="100%" height="100%" fill="#111111" mask="url(#intersection)" opacity="0" class="svg-background-mask" /></svg></div>
         </div>
-        <div class="home-circles-objective-texts">
-          <div class="home-circles-objective-text"><h2 class="heading-2">L'obiettivo è <span class="italic">chiaro</span></h2></div>
-          <div class="home-circles-objective-text" style="opacity: 0;"><h2 class="heading-2">PROPRIO <span class="italic">QUI</span></h2></div>
-        </div>
+        <div class="home-circles-objective-texts"><div class="home-circles-objective-text"><h2 class="heading-2">Tre strumenti.<br/><span class="italic">Un solo obiettivo.</span></h2></div><div class="home-circles-objective-text" style="opacity: 0;"><h2 class="heading-2">UN SOLO <span class="italic">SISTEMA</span></h2></div></div>
       </div>
     </section>
 
-    <!-- ── ABOUT ── -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <div class="about-layout">
-          <div class="about-image-wrapper" data-anim="fade">
-            <img src="images/face.jpg" alt="Marco Zulian" loading="lazy" style="border-radius: 12px; object-fit: cover;" />
-          </div>
-          <div class="about-text">
-            <div class="section-label" data-anim="fade">
-              <div class="section-label-line"></div>
-              <span class="section-label-text">Chi Siamo</span>
-            </div>
-            <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">
-              Non un'agenzia.<br/>Il tuo <span class="italic">partner digitale</span>.
-            </h2>
-            <p class="body-1" data-anim="fade" data-fade-delay="0.1">
-              Zulian Social Media Marketing nasce dalla passione per il digitale e dalla convinzione che ogni brand ha una storia unica da raccontare. Non crediamo nelle soluzioni standard: ogni strategia che creiamo è progettata attorno ai tuoi obiettivi specifici, al tuo pubblico e alla tua visione.
-            </p>
-            <p class="body-1" data-anim="fade" data-fade-delay="0.2">
-              Siamo un team di strategist, content creator, designer e data analyst che lavora con un unico obiettivo: far crescere il tuo brand in modo autentico e misurabile.
-            </p>
-            <div class="about-values" data-anim="fade" data-fade-delay="0.3">
-              <span class="about-value-tag">Creatività</span>
-              <span class="about-value-tag">Strategia</span>
-              <span class="about-value-tag">Risultati</span>
-              <span class="about-value-tag">Innovazione</span>
-              <span class="about-value-tag">Autenticità</span>
-              <span class="about-value-tag">Data-Driven</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="about-section" id="about"><div class="container"><div class="about-layout"><div class="about-image-wrapper" data-anim="fade"><img src="images/face.jpg" alt="Marco Zulian" loading="lazy" style="border-radius: 12px; object-fit: cover;" /></div><div class="about-text"><div class="section-label" data-anim="fade"><div class="section-label-line"></div><span class="section-label-text">Chi Sono</span></div><h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">Non un'agenzia generalista.<br/>Il tuo <span class="italic">partner digitale</span>.</h2><p class="body-1" data-anim="fade" data-fade-delay="0.1">Il mio lavoro parte da una domanda semplice: cosa deve fare il sito per il business? Da lì progetto struttura, contenuti, design, sviluppo e automazioni, scegliendo la tecnologia solo quando serve davvero.</p><p class="body-1" data-anim="fade" data-fade-delay="0.2">Social, video e advertising restano parte del sistema, ma non sono più il centro. Servono a portare persone dentro un'esperienza che deve trasformare attenzione in contatti, prenotazioni o vendite.</p><div class="about-values" data-anim="fade" data-fade-delay="0.3"><span class="about-value-tag">Strategia</span><span class="about-value-tag">Sviluppo</span><span class="about-value-tag">Conversione</span><span class="about-value-tag">Automazione</span><span class="about-value-tag">Performance</span><span class="about-value-tag">Misurazione</span></div></div></div></div></section>
 
-    <!-- ── PROCESS ── -->
-    <section class="process-section" id="process">
-      <div class="container">
-        <div class="section-label" data-anim="fade">
-          <div class="section-label-line"></div>
-          <span class="section-label-text">Il Nostro Metodo</span>
-        </div>
-        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%" style="margin-bottom: 3rem;">
-          Come <span class="italic">lavoriamo</span>
-        </h2>
+    <section class="process-section" id="process"><div class="container"><div class="section-label" data-anim="fade"><div class="section-label-line"></div><span class="section-label-text">Il Metodo</span></div><h2 class="heading-2" data-anim="skew" data-skew-start="top 85%" style="margin-bottom: 3rem;">Dal problema commerciale<br/>a un sistema <span class="italic">funzionante</span>.</h2><div class="process-timeline"><div class="process-step" data-anim="fade"><span class="process-step-number">Fase 01</span><h3>Diagnosi</h3><p>Chiarisco obiettivo, cliente, offerta, priorità e attriti. Prima elimino ciò che non serve: il sito non deve diventare più complesso del business.</p></div><div class="process-step" data-anim="fade" data-fade-delay="0.1"><span class="process-step-number">Fase 02</span><h3>Architettura</h3><p>Definisco percorso, contenuti, pagine o scene, CTA, dati e livelli di servizio. Il design arriva dopo che il sito sa già cosa deve far capire e fare.</p></div><div class="process-step" data-anim="fade" data-fade-delay="0.2"><span class="process-step-number">Fase 03</span><h3>Design &amp; Sviluppo</h3><p>Costruisco l'esperienza, curo il mobile e uso il motion solo dove migliora gerarchia, continuità o comprensione. Funzioni e tecnologia restano proporzionate al progetto.</p></div><div class="process-step" data-anim="fade" data-fade-delay="0.3"><span class="process-step-number">Fase 04</span><h3>Verifica &amp; Crescita</h3><p>Controllo percorso, contenuti e comportamento; poi si misura e si migliora. Social, advertising e automazioni entrano quando amplificano un sistema che funziona già.</p></div></div></div></section>
 
-        <div class="process-timeline">
-          <div class="process-step" data-anim="fade">
-            <span class="process-step-number">Fase 01</span>
-            <h3>Discovery & Analisi</h3>
-            <p>Studiamo il tuo brand, il tuo mercato e i tuoi competitor. Analizziamo i dati esistenti e identifichiamo le opportunità di crescita sui social media.</p>
-          </div>
-          <div class="process-step" data-anim="fade" data-fade-delay="0.1">
-            <span class="process-step-number">Fase 02</span>
-            <h3>Strategia & Pianificazione</h3>
-            <p>Definiamo obiettivi misurabili, piano editoriale, tone of voice e calendario dei contenuti. Ogni dettaglio è pensato per massimizzare l'impatto.</p>
-          </div>
-          <div class="process-step" data-anim="fade" data-fade-delay="0.2">
-            <span class="process-step-number">Fase 03</span>
-            <h3>Creazione & Produzione</h3>
-            <p>Il nostro team creativo produce contenuti di alta qualità: shooting fotografici, video, grafiche, copy e tutto il materiale necessario.</p>
-          </div>
-          <div class="process-step" data-anim="fade" data-fade-delay="0.3">
-            <span class="process-step-number">Fase 04</span>
-            <h3>Ottimizzazione & Crescita</h3>
-            <p>Monitoriamo costantemente i risultati, ottimizziamo le performance e scaliamo ciò che funziona. Report trasparenti e risultati tangibili.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="parallax-section" id="parallax-2"><div class="parallax-image"><img src="images/branding-design.jpg" alt="Progettazione di un'esperienza digitale" loading="lazy" /></div><div class="parallax-overlay"></div><div class="parallax-content container"><h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">Il sito deve vendere prima il <span class="italic text-accent">valore</span>.<br/>Poi il servizio.</h2></div></section>
 
-    <!-- ── SECOND PARALLAX ── -->
-    <section class="parallax-section" id="parallax-2">
-      <div class="parallax-image">
-        <img src="images/branding-design.jpg" alt="Branding design premium" loading="lazy" />
-      </div>
-      <div class="parallax-overlay"></div>
-      <div class="parallax-content container">
-        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">
-          Il tuo brand merita<br/>di essere <span class="italic text-accent">indimenticabile</span>
-        </h2>
-      </div>
-    </section>
-
-    <!-- ── CTA ── -->
-    <section class="cta-section" id="contact">
-      <div class="container">
-        <div class="section-label" data-anim="fade" style="justify-content: center;">
-          <div class="section-label-line"></div>
-          <span class="section-label-text">Inizia Ora</span>
-          <div class="section-label-line"></div>
-        </div>
-        <h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">
-          Pronto a far <span class="italic">esplodere</span><br/>la tua presenza social?
-        </h2>
-        <p class="body-1" data-anim="fade" data-fade-delay="0.1">
-          Parliamo del tuo progetto. La consulenza iniziale è gratuita e senza impegno.
-        </p>
-        <a href="mailto:info@zuliansocial.com" class="cta-button" data-anim="fade" data-fade-delay="0.2">
-          Contattaci
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-    </section>
-
+    <section class="cta-section" id="contact"><div class="container"><div class="section-label" data-anim="fade" style="justify-content: center;"><div class="section-label-line"></div><span class="section-label-text">Parliamone</span><div class="section-label-line"></div></div><h2 class="heading-2" data-anim="skew" data-skew-start="top 85%">Hai un sito vecchio, assente<br/>o che non porta <span class="italic">contatti</span>?</h2><p class="body-1" data-anim="fade" data-fade-delay="0.1">Partiamo dal problema più concreto e costruiamo solo ciò che serve. Niente pacchetti gonfiati, niente funzioni decorative messe lì per fare scena.</p><a href="mailto:info@zuliansocial.com?subject=Nuovo%20progetto%20web" class="cta-button" data-anim="fade" data-fade-delay="0.2">Raccontami il progetto<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div></section>
   </main>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-brand-name">Zulian <span class="accent">&amp;</span> Social</div>
-          <p>Agenzia di social media marketing per brand ambiziosi che vogliono crescere in modo autentico e misurabile.</p>
-          <div style="margin-top: 2rem;">
-            <img src="images/avatar-detective.png" alt="Mascotte Zulian" style="width: 100px; height: auto;" />
-          </div>
-        </div>
-        <div class="footer-links">
-          <div class="footer-links-column">
-            <h4>Navigazione</h4>
-            <a href="#hero">Home</a>
-            <a href="#about">Chi Siamo</a>
-            <a href="#services">Servizi</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contatti</a>
-          </div>
-          <div class="footer-links-column">
-            <h4>Servizi</h4>
-            <a href="#services">Social Strategy</a>
-            <a href="#services">Content Creation</a>
-            <a href="#services">Social Advertising</a>
-            <a href="#services">Brand Identity</a>
-          </div>
-          <div class="footer-links-column">
-            <h4>Contatti</h4>
-            <a href="mailto:info@zuliansocial.com">info@zuliansocial.com</a>
-            <a href="tel:+390000000000">+39 000 000 0000</a>
-            <a href="#">Italia</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Zulian Social Media Marketing. Tutti i diritti riservati. <br> <span style="opacity: 0.6; font-size: 0.9em;">Sito e contenuti realizzati con l'aiuto dell'AI.</span></p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">
-            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer" id="footer"><div class="container"><div class="footer-top"><div class="footer-brand"><div class="footer-brand-name">Zulian <span class="accent">&amp;</span> Social</div><p>Sviluppo web, e-commerce, app, automazioni e marketing digitale collegati in un sistema semplice da capire e da usare.</p><div style="margin-top: 2rem;"><img src="images/avatar-detective.png" alt="Mascotte Zulian" style="width: 100px; height: auto;" /></div></div><div class="footer-links"><div class="footer-links-column"><h3 style="font-family:var(--font-body); font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--color-text-high); margin-bottom:1rem;">Navigazione</h3><a href="#hero">Home</a><a href="#services">Soluzioni</a><a href="#portfolio">Cosa costruisco</a><a href="#process">Metodo</a><a href="#about">Chi sono</a><a href="#contact">Contatti</a></div><div class="footer-links-column"><h3 style="font-family:var(--font-body); font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--color-text-high); margin-bottom:1rem;">Servizi</h3><a href="#services">Siti Web</a><a href="#services">E-commerce</a><a href="#services">App &amp; Piattaforme</a><a href="#services">Automazioni &amp; AI</a><a href="#services">Social &amp; Advertising</a></div><div class="footer-links-column"><h3 style="font-family:var(--font-body); font-size:.8rem; font-weight:600; text-transform:uppercase; letter-spacing:.12em; color:var(--color-text-high); margin-bottom:1rem;">Contatti</h3><a href="mailto:info@zuliansocial.com">info@zuliansocial.com</a><span style="color:var(--color-text-low); font-size:.9rem; line-height:1.6;">Reggio Calabria · Italia<br/>Progetti anche da remoto</span></div></div></div><div class="footer-bottom"><p>&copy; 2026 Zulian Social Media Marketing. Tutti i diritti riservati.</p></div></div></footer>
 
-  <!-- ═══ SCRIPTS ═══ -->
   <script src="main.js"></script>
-
 </body>
 </html>
