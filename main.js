@@ -67,5 +67,5 @@
 
   // Mantiene invariato il comportamento del sito caricando il JS originale
   // nello stesso punto della pagina in cui prima veniva eseguito main.js.
-  document.write('<script src="main-core.js"><\\/script>');
+  document.write('<script src="main-core.js"></script>');
 })();
