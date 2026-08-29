@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Zulian</title>
+  <defs>
+    <mask id="z-cut">
+      <rect width="160" height="160" fill="white"/>
+      <polygon points="48,132 115,44 124,44 57,132" fill="black"/>
+    </mask>
+  </defs>
+  <path d="M8 16H148V45L58 134H148V145H8V116L98 27H8Z" fill="#2563FF" mask="url(#z-cut)"/>
+</svg>
